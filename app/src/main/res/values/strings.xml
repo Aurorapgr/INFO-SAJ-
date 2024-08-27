@@ -2,4 +2,9 @@
     <string name="app_name">SAJ60</string>
     <string name="home_app_name">SAJ INFO 60+</string>
     <string name="app_desc">Serviços Públicos para Pessoas Idosas em Santo Antônio de Jesus-BA</string>
+    <string name="health">Saúde</string>
+    <string name="healthBT1"> SISTEMA ÚNICO DE SAÚDE - SUS</string>
+    <string name="healthBT2">INSTITUIÇÕES FILANTRÓPICAS E ONGS</string>
+    <string name="healthBT3">SERVIÇOS DA UFRB</string>
+    <string name="healthBT4">DEFENSORIA PÚBLICA</string>
 </resources>
