@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ubsCF">UBS CASACA DE FERRO</string>
+    <string name="usfAPDR">USF Aurelino Pereira Dos Reis</string>
+    <string name="usfSP">USF São Paulo</string>
+    <string name="usfASIeII">USF Alto Sobradinho I e II </string>
+    <string name="usfCNII">UBS Cidade Nova II</string>
+    <string name="usfBV">USF Bela Vista</string>
+    <string name="usfMA">USF Marita Amâncio</string>
+    <string name="usfAlMo">USF Alto do Morro</string>
+    <string name="usfSFIeII">USF São Francisco I e II</string>
+    <string name="usfVL">USF Viriato Lobo</string>
+    <string name="usfPCMS">USF Povoado do Cocão Minas do Sapé</string>
+    <string name="usfCUI">USF do Calabar Urbis I</string>
+    <string name="usfBVB">USF Boa Vista Bomfim</string>
+    <string name="usfZA">UBS Zilda Arns</string>
+    <string name="usfGPSII">USF Geraldo Pessoa Salles II</string>
+    <string name="usfFQ">USF Fernando Queiroz</string>
+    <string name="usfAmp">USF do Amparo</string>
+    <string name="usfUIII">USF Urbis III</string>
+    <string name="usfASA">USF Alto Santo Antônio</string>
+    <string name="usfBID">USF Bairro Irmã Dulce</string>
+    <string name="usfSM">USF Santa Madalena</string>
+    <string name="usfAnd">USF do Andaiá</string>
+</resources>

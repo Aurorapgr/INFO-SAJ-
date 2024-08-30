@@ -9,14 +9,12 @@
     android:gravity="center"
     android:orientation="vertical"
     android:paddingVertical="20dp"
-    tools:context=".saude">
+    tools:context=".sus">
 
     <TextView
-
         android:id="@+id/tv_1_main"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="@string/home_app_name"
         android:textColor="@color/purple"
@@ -48,16 +46,12 @@
             android:orientation="vertical"
             android:paddingHorizontal="30dp"
             android:paddingVertical="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_1_main">
+            android:paddingBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/health"
+                android:text="@string/sus"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
                 android:textSize="40sp"
@@ -68,11 +62,11 @@
                 android:layout_height="20dp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:background="@drawable/btn_white"
                 android:padding="8dp"
-                android:text="@string/healthBT1"
+                android:text="@string/usfs"
                 android:textAllCaps="true"
                 android:textSize="24sp" />
 
@@ -85,20 +79,7 @@
                 android:layout_height="100dp"
                 android:background="@drawable/btn_white"
                 android:padding="8dp"
-                android:text="@string/healthBT2"
-                android:textAllCaps="true"
-                android:textSize="24sp" />
-
-            <View
-                android:layout_width="20dp"
-                android:layout_height="20dp" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="match_parent"
-                android:layout_height="100sp"
-                android:background="@drawable/btn_white"
-                android:padding="8dp"
-                android:text="@string/healthBT3"
+                android:text="@string/policlinica"
                 android:textAllCaps="true"
                 android:textSize="24sp" />
 
@@ -111,7 +92,7 @@
                 android:layout_height="100dp"
                 android:background="@drawable/btn_white"
                 android:padding="8dp"
-                android:text="@string/healthBT4"
+                android:text="@string/hrsaj"
                 android:textAllCaps="true"
                 android:textSize="24sp" />
 
@@ -119,8 +100,35 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/btn_white"
+                android:padding="8dp"
+                android:text="@string/polimuni"
+                android:textAllCaps="true"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/btn_white"
+                android:padding="8dp"
+                android:text="@string/unacon"
+                android:textAllCaps="true"
+                android:textSize="24sp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
         </LinearLayout>
+
     </ScrollView>
+
 
     <ImageView
         android:id="@+id/imageView"

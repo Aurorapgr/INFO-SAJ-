@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.infosaj.saj60.databinding.ActivityMainBinding
+import com.infosaj.saj60.databinding.ActivitySaudeBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -17,7 +18,9 @@ class MainActivity : AppCompatActivity() {
         val view =binding.root
         setContentView(view)
 
-
+        binding.tohealth.setOnClickListener {
+            startActivity(Intent(this,saude::class.java))
+        }
 
     }
 }
