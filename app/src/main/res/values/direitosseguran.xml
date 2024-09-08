@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DP">Defensoria Pública</string>
+    <string name="MP">Ministério Público</string>
+    <string name="CMDPI">Conselho municipal dos direitos da pessoa idosa</string>
+    <string name="Deleg">Delegacia</string>
+    <string name="q1">Você sabe quais são os direitos da pessoa idosa?</string>
+    <string name="InfoEmpr">Informações sobre o Empréstimo Consignado</string>
+    <string name="InfoBenef">Informações sobre o Benefício de Prestação Continuada - BPC</string>
+</resources>

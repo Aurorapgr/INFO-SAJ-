@@ -10,7 +10,9 @@
     <string name="sus">SUS</string>
     <string name="usfs">USF’S - Unidades de Saúde da Família </string>
     <string name="usf">Unidades de Saúde da Família</string>
-
+    <string name="ass">Assitência Social</string>
+    <string name="lazereduca">Lazer e Educação</string>
+    <string name="direitosseguran">Direitos e Segurança</string>
     <string name="policlinica">Policlínica Regional de Santo Antônio de Jesus</string>
     <string name="hrsaj">HRSAJ - Hospital Regional de Santo Antônio de Jesus </string>
     <string name="polimuni">Policlínica Municipal</string>

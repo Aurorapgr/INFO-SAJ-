@@ -2,12 +2,8 @@ package com.infosaj.saj60
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.infosaj.saj60.databinding.ActivityMainBinding
-import com.infosaj.saj60.databinding.ActivitySaudeBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -20,6 +16,15 @@ class MainActivity : AppCompatActivity() {
 
         binding.tohealth.setOnClickListener {
             startActivity(Intent(this,saude::class.java))
+        }
+        binding.toass.setOnClickListener {
+            startActivity(Intent(this, AssistSocial::class.java))
+        }
+        binding.tolazerEduca.setOnClickListener {
+            startActivity(Intent(this, LazerEduca::class.java))
+        }
+        binding.todireitosSeguran.setOnClickListener {
+            startActivity(Intent(this, DireitosSeguran::class.java))
         }
 
     }
