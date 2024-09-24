@@ -13,25 +13,32 @@
         android:theme="@style/Theme.SAJ60"
         tools:targetApi="31">
         <activity
+            android:name=".UsfStandard"
+            android:exported="false" />
+        <activity
+            android:name=".Unacon"
+            android:exported="false" />
+
+        <activity
+            android:name=".ServUFRB"
+            android:exported="false" />
+        <activity
+            android:name=".InstOngs"
+            android:exported="false" />
+        <activity
             android:name=".DireitosSeguran"
             android:exported="false" />
         <activity
-            android:name=".lazer_educa"
+            android:name=".LazerEduca"
+            android:exported="false" />
+        <activity
+            android:name=".Testact"
             android:exported="false" />
         <activity
             android:name=".AssistSocial"
             android:exported="false" />
         <activity
-            android:name=".usfs"
-            android:exported="false"/>
-        <activity
-            android:name=".sus"
-            android:exported="false" />
-        <activity
-            android:name=".saude"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Usfs"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +46,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Sus"
+            android:exported="false" />
+        <activity
+            android:name=".Saude"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
 
+        </activity>
     </application>
 
 </manifest>

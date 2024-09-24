@@ -14,16 +14,16 @@ class MainActivity : AppCompatActivity() {
         val view =binding.root
         setContentView(view)
 
-        binding.tohealth.setOnClickListener {
-            startActivity(Intent(this,saude::class.java))
+        binding.toSaude.setOnClickListener {
+            startActivity(Intent(this, UsfStandard::class.java))
         }
-        binding.toass.setOnClickListener {
+        binding.toAssistSocial.setOnClickListener {
             startActivity(Intent(this, AssistSocial::class.java))
         }
-        binding.tolazerEduca.setOnClickListener {
+        binding.toLazerEduca.setOnClickListener {
             startActivity(Intent(this, LazerEduca::class.java))
         }
-        binding.todireitosSeguran.setOnClickListener {
+        binding.toDireitosSeguran.setOnClickListener {
             startActivity(Intent(this, DireitosSeguran::class.java))
         }
 

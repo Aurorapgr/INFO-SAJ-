@@ -17,4 +17,7 @@
     <string name="hrsaj">HRSAJ - Hospital Regional de Santo Antônio de Jesus </string>
     <string name="polimuni">Policlínica Municipal</string>
     <string name="unacon">UNACON</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

@@ -8,4 +8,15 @@
     </style>
 
     <style name="Theme.SAJ60" parent="Base.Theme.SAJ60" />
+
+    <style name="Theme.SAJ60.Fullscreen" parent="Theme.SAJ60">
+        <item name="android:actionBarStyle">@style/Widget.Theme.SAJ60.ActionBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.SAJ60.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
 </resources>
