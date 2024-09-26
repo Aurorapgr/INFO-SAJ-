@@ -15,19 +15,48 @@ class Usfs : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
+
         binding = ActivityUsfsBinding.inflate(layoutInflater)
         val view = binding.root
-
         setContentView(view)
 
-        findAllAppComnpatButtons(view)
+        val nextIntent = Intent(this, UsfStandard::class.java)
+        val btnList = listOf(
+            binding.usfAlMo,
+            binding.usfASA,
+            binding.usfASIeII,
+            binding.usfAnd,
+            binding.usfAmp,
+            binding.usfAPDR,
+            binding.usfBID,
+            binding.usfBV,
+            binding.usfBVB,
+            binding.usfCF,
+            binding.usfCNII,
+            binding.usfCUI,
+            binding.usfFQ,
+            binding.usfGPSII,
+            binding.usfMA,
+            binding.usfPCMS,
+            binding.usfSFIeII,
+            binding.usfSP,
+            binding.usfSM,
+            binding.usfUIII,
+            binding.usfVL,
+            binding.usfZA
+        )
 
 
-
-        binding.mami.setOnClickListener {
-            startActivity(Intent(this, Usfs::class.java))
+        btnList.forEachIndexed {i, e ->
+            e.setOnClickListener {
+                nextIntent.putExtra("INDEX",i)
+                startActivity(nextIntent)
+            }
         }
 
+
+
+        findAllAppComnpatButtons(view)
     }
     fun findAllAppComnpatButtons(viewGroup: ViewGroup) {
         for (i in 0 until viewGroup.childCount) {

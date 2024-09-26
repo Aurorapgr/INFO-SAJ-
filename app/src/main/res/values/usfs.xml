@@ -9,6 +9,7 @@
     <string name="usfBID">USF Bairro Irmã Dulce</string>
     <string name="usfBV">USF Bela Vista</string>
     <string name="usfBVB">USF Boa Vista Bomfim</string>
+    <string name="usfCF">UBS Casaca de Ferro</string>
     <string name="usfCNII">UBS Cidade Nova II</string>
     <string name="usfCUI">USF do Calabar Urbis I</string>
     <string name="usfFQ">USF Fernando Queiroz</string>
@@ -21,5 +22,5 @@
     <string name="usfUIII">USF Urbis III</string>
     <string name="usfVL">USF Viriato Lobo</string>
     <string name="usfZA">UBS Zilda Arns</string>
-    <string name="ubsCF">UBS CASACA DE FERRO</string>
+
 </resources>

@@ -8,42 +8,24 @@
     android:background="@color/bgWhite"
     android:gravity="center"
     android:orientation="vertical"
-    android:paddingVertical="20dp"
+    android:paddingBottom="20dp"
     tools:context=".UsfStandard">
-
-    <TextView
-
-        android:id="@+id/tv_1_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="@string/home_app_name"
-        android:textColor="@color/purple"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_1_main">
+        app:layout_constraintTop_toBottomOf="@+id/imgMain">
 
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_purple"
+            android:background="@color/purple"
             android:gravity="center_horizontal"
             android:minHeight="500dp"
             android:orientation="vertical"
@@ -56,13 +38,15 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_1_main">
 
             <TextView
+
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/health"
+                android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="40sp"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <View
@@ -70,29 +54,30 @@
                 android:layout_height="20dp" />
 
             <TextView
+                android:padding="10dp"
                 android:id="@+id/service"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="@drawable/bg_white_top"
-                android:padding="8dp"
                 android:text="@string/healthBT1"
-                android:textSize="20sp" />
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/address"
+                android:padding="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/bg_white_mid"
-                android:padding="8dp"
+                android:minHeight="100dp"
                 android:text="@string/healthBT1"
                 android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/phone"
+                android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="@drawable/bg_white_bot"
-                android:padding="8dp"
                 android:text="@string/healthBT1"
                 android:textSize="24sp" />
 
@@ -123,6 +108,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/baseline_logout_24" />
+
+    <ImageView
+        android:background="@color/purple"
+        android:id="@+id/imgMain"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:maxHeight="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/viriato" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
