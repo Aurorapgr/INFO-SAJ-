@@ -3,6 +3,7 @@ package com.infosaj.saj60
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import com.infosaj.saj60.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,20 +13,37 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view =binding.root
+        val nextIntent = Intent(this, GenericView::class.java)
+        val btnList : List<AppCompatButton> = listOf(
+            binding.toSaude,
+            binding.toAssistSocial,
+            binding.toLazerEduca,
+            binding.toDireitosSeguran
+        )
+
+        btnList.forEachIndexed { index, e ->
+            e.setOnClickListener {
+                nextIntent.putExtra("ID",index)
+                startActivity(nextIntent)
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        binding.emerg.setOnClickListener {
+            startActivity(Intent(this, Emergen::class.java))
+        }
+        binding.infotab.setOnClickListener {
+            startActivity(Intent(this, InfoWindowns::class.java))
+        }
+
         setContentView(view)
-
-        binding.toSaude.setOnClickListener {
-            startActivity(Intent(this, UsfStandard::class.java))
-        }
-        binding.toAssistSocial.setOnClickListener {
-            startActivity(Intent(this, AssistSocial::class.java))
-        }
-        binding.toLazerEduca.setOnClickListener {
-            startActivity(Intent(this, LazerEduca::class.java))
-        }
-        binding.toDireitosSeguran.setOnClickListener {
-            startActivity(Intent(this, DireitosSeguran::class.java))
-        }
-
     }
 }

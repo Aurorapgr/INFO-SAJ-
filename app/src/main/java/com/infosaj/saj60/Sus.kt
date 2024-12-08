@@ -10,19 +10,42 @@ class Sus : AppCompatActivity() {
     private lateinit var binding: ActivitySusBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        val nextIntent = Intent(this, UsfStandard::class.java)
         binding = ActivitySusBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
+        val home = binding.home
+        val back = binding.back
+        home.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
+            finish()
+        }
+        back.setOnClickListener{
+            finish()
+        }
+
         binding.toUSFs.setOnClickListener {
+            startActivity(Intent(this,Usfs::class.java))
 
-            startActivity(Intent(this, Usfs::class.java))
         }
 
-        binding.toUNACON.setOnClickListener {
-            Toast.makeText(this,"AAAAAAAAAA",Toast.LENGTH_LONG).show()
-            startActivity(Intent(this, Unacon::class.java))
+
+        val btnList = listOf(
+            binding.PCRE,
+            binding.HRSAJ,
+            binding.PCMU,
+            binding.UNACON
+        )
+
+
+        btnList.forEachIndexed {i, e ->
+            e.setOnClickListener {
+                nextIntent.putExtra("SUSINDEX",i)
+                startActivity(nextIntent)
+            }
         }
+
+
     }
 }

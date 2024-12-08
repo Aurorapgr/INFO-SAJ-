@@ -8,31 +8,28 @@
     android:background="@color/bgWhite"
     android:gravity="center"
     android:orientation="vertical"
-    android:paddingVertical="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
     tools:context=".ServUFRB">
 
-    <TextView
+    <ImageView
         android:id="@+id/tv_1_main"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/home_app_name"
-        android:textColor="@color/purple"
-        android:textSize="28sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@mipmap/ic_launcher"/>
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_1_main">
@@ -64,6 +61,8 @@
                 android:layout_height="20dp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/black"
+                android:id="@+id/LABCOV"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:background="@drawable/btn_white"
@@ -77,6 +76,8 @@
                 android:layout_height="20dp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/black"
+                android:id="@+id/servPSI"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="@drawable/btn_white"
@@ -95,7 +96,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/home"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -107,7 +108,7 @@
         app:srcCompat="@drawable/round_home_24" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/back"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"

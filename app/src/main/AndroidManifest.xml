@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,12 +19,32 @@
         android:theme="@style/Theme.SAJ60"
         tools:targetApi="31">
         <activity
+            android:name=".GenericView"
+            android:exported="false" />
+        <activity
+            android:name=".Cdd"
+            android:exported="false" />
+        <activity
+            android:name=".InfoWindowns"
+            android:exported="false" />
+        <activity
+            android:name=".info"
+            android:exported="false" />
+        <activity
+            android:name=".Emergen"
+            android:exported="false" />
+        <activity
+            android:name=".callPhone"
+            android:exported="false" />
+        <activity
+            android:name=".Complaint"
+            android:exported="false" />
+        <activity
             android:name=".UsfStandard"
             android:exported="false" />
         <activity
             android:name=".Unacon"
             android:exported="false" />
-
         <activity
             android:name=".ServUFRB"
             android:exported="false" />
@@ -32,20 +58,11 @@
             android:name=".LazerEduca"
             android:exported="false" />
         <activity
-            android:name=".Testact"
-            android:exported="false" />
-        <activity
             android:name=".AssistSocial"
             android:exported="false" />
         <activity
             android:name=".Usfs"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Sus"
             android:exported="false" />
@@ -55,7 +72,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

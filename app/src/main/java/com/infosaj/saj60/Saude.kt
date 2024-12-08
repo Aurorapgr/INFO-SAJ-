@@ -14,6 +14,19 @@ class Saude : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        val home = binding.home
+        val back = binding.back
+        home.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
+            finish()
+        }
+        back.setOnClickListener{
+            finish()
+        }
+
+        val nextIntent = Intent(this, UsfStandard::class.java)
+
+
         binding.toSUS.setOnClickListener {
             startActivity(Intent(this,Sus::class.java))
         }
@@ -23,6 +36,14 @@ class Saude : AppCompatActivity() {
         binding.toServUFRB.setOnClickListener {
             startActivity(Intent(this,ServUFRB::class.java))
         }
+
+        binding.DP.setOnClickListener{
+            nextIntent.putExtra("USFINDEX",22)
+            startActivity(nextIntent)
+        }
+
+
+
 
     }
 }
