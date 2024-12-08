@@ -67,6 +67,8 @@ class GenericView : AppCompatActivity() {
 
         binding.title.text = item.title
 
+        //tesasd a
+
         val infoList = item.tabInfo
         nextIntent.putExtra("ID",item.id)
 
