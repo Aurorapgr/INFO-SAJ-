@@ -15,8 +15,9 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.updateLayoutParams
 import com.infosaj.saj60.data.DirSegData
 import com.infosaj.saj60.data.LazerEducData
-import com.infosaj.saj60.data.UsfConstructor
+import com.infosaj.saj60.data.InfoDataConstructor
 import com.infosaj.saj60.data.Data
+import com.infosaj.saj60.data.GlobalData
 import com.infosaj.saj60.databinding.ActivityUsfStandardBinding
 import com.infosaj.saj60.databinding.CallPhoneBinding
 
@@ -32,14 +33,6 @@ class UsfStandard : AppCompatActivity() {
         val view = binding.root
 
 
-        val dbUFRB = Data.servUFRB
-        val dbUSF = Data.servUFRB
-        val dbONGS = Data.servUFRB
-        val dbASSSOCIAL = Data.assSocial
-        val dbLE = LazerEducData.lazerEduca
-        val dbDS = DirSegData.dirSeg
-        val dbSUS = Data.sus
-
         setContentView(view)
 
         val home = binding.home
@@ -52,48 +45,14 @@ class UsfStandard : AppCompatActivity() {
             finish()
         }
 
-        val extraUFRB = intent.getIntExtra("UFRBINDEX", 300)
-        val extraSUS = intent.getIntExtra("SUSINDEX", 400)
-        val extraDS = intent.getIntExtra("DSINDEX", 500)
-        val extraLE = intent.getIntExtra("LEINDEX", 600)
-        val extraAS = intent.getIntExtra("ASINDEX", 700)
-        val extraUSF = intent.getIntExtra("USFINDEX", 800)
-        val extraONGS = intent.getIntExtra("ONGSINDEX", 900)
 
+        setterItem(GlobalData.dataObject,GlobalData.dO_GlobalIndex)
 
-        if (extraUFRB != 300) {
-            setterItem(dbUFRB, extraUFRB)
-            if(extraUFRB == 1){
-                binding.linearLayout.addView(btnLinks("https://www.ufrb.edu.br/ccs/"))
-            }
-        }
-        if (extraSUS != 400) {
-            setterItem(dbSUS, extraSUS)
-        }
-        if (extraDS != 500) {
-            setterItem(dbDS, extraDS)
-            if (extraDS == 1 || extraDS == 2) {
-                binding.linearLayout.addView(viewSpace())
-                binding.linearLayout.addView(btnComplaint(extraDS))
-            }
-        }
-        if (extraLE != 600) {
-            setterItem(dbLE, extraLE)
-        }
-        if (extraAS != 700) {
-            setterItem(dbASSSOCIAL, extraAS)
-        }
-        if (extraUSF != 800) {
-            setterItem(dbUSF, extraUSF)
-        }
-        if (extraONGS != 900) {
-            setterItem(dbONGS, extraONGS)
-        }
 
 
     }
 
-    private fun setterItem(obj: List<UsfConstructor>, i: Int) {
+    private fun setterItem(obj: List<InfoDataConstructor>, i: Int) {
         val mutableList = mutableListOf<String>()
         val phoneItem = obj[i].phone
         val lista = listOf(
@@ -115,7 +74,7 @@ class UsfStandard : AppCompatActivity() {
         phoneItemConstructor(100, 1, phoneItem)
     }
 
-    private fun infoBuilder(mList: MutableList<String>, obj: List<UsfConstructor>, i: Int) {
+    private fun infoBuilder(mList: MutableList<String>, obj: List<InfoDataConstructor>, i: Int) {
         mList.forEachIndexed { index, e ->
             binding.linearLayout.addView(infoItem(e), 4 + index)
         }

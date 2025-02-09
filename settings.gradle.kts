@@ -19,6 +19,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "SAJ60"
+rootProject.name = "InfoSAJ60+"
 include(":app")
  

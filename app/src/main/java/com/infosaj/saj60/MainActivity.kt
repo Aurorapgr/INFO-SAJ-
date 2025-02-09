@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.infosaj.saj60.data.GlobalData
 import com.infosaj.saj60.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,22 +15,24 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view =binding.root
         val nextIntent = Intent(this, GenericView::class.java)
-        val btnList : List<AppCompatButton> = listOf(
-            binding.toSaude,
-            binding.toAssistSocial,
-            binding.toLazerEduca,
-            binding.toDireitosSeguran
-        )
 
-        btnList.forEachIndexed { index, e ->
-            e.setOnClickListener {
-                nextIntent.putExtra("ID",index)
-                startActivity(nextIntent)
-            }
+
+        binding.toSaude.setOnClickListener {
+            GlobalData.rPT = 0
+            startActivity(nextIntent)
         }
-
-
-
+        binding.toAssistSocial.setOnClickListener {
+            GlobalData.rPT = 5
+            startActivity(nextIntent)
+        }
+        binding.toLazerEduca.setOnClickListener {
+            GlobalData.rPT = 6
+            startActivity(nextIntent)
+        }
+        binding.toDireitosSeguran.setOnClickListener {
+            GlobalData.rPT = 7
+            startActivity(nextIntent)
+        }
 
 
 

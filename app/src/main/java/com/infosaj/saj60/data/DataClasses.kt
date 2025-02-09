@@ -1,7 +1,5 @@
 package com.infosaj.saj60.data
 
-import android.content.Intent
-
 data class CompliantConstructor(
     val title: String,
     val name: String,
@@ -24,7 +22,7 @@ data class ITDB(
     val info3: String,
     val info4: String
 )
-data class UsfConstructor(
+data class InfoDataConstructor(
     val img: Int,
     val id: Int,
     val usfName: String,
@@ -41,4 +39,16 @@ data class NavInfo(
     val id: String,
     val title: String,
     val tabInfo : List<String>
+)
+data class Tela(
+    val title: String,
+    val btns: List<Btn>
+)
+
+data class Btn(
+    val title: String,
+    val refpt: Int?,
+    val act : Class<*>?,
+    val dObj : List<InfoDataConstructor>?,
+    val index : Int?
 )

@@ -6,7 +6,7 @@
     android:background="@drawable/btn_white"
     android:minHeight="100dp"
     android:padding="8dp"
-    android:text="@string/usfAlMo"
+    android:text=""
     android:textAllCaps="true"
     android:textColor="@color/black"
     android:textSize="24sp">

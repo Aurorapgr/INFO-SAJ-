@@ -27,48 +27,18 @@
         <activity
             android:name=".InfoWindowns"
             android:exported="false" />
-        <activity
-            android:name=".info"
-            android:exported="false" />
+
         <activity
             android:name=".Emergen"
             android:exported="false" />
-        <activity
-            android:name=".callPhone"
-            android:exported="false" />
+
         <activity
             android:name=".Complaint"
             android:exported="false" />
         <activity
             android:name=".UsfStandard"
             android:exported="false" />
-        <activity
-            android:name=".Unacon"
-            android:exported="false" />
-        <activity
-            android:name=".ServUFRB"
-            android:exported="false" />
-        <activity
-            android:name=".InstOngs"
-            android:exported="false" />
-        <activity
-            android:name=".DireitosSeguran"
-            android:exported="false" />
-        <activity
-            android:name=".LazerEduca"
-            android:exported="false" />
-        <activity
-            android:name=".AssistSocial"
-            android:exported="false" />
-        <activity
-            android:name=".Usfs"
-            android:exported="false" />
-        <activity
-            android:name=".Sus"
-            android:exported="false" />
-        <activity
-            android:name=".Saude"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -78,6 +48,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

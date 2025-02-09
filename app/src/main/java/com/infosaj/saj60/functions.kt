@@ -100,9 +100,10 @@ fun genericTitle(context: Context,text: String): TextView{
     }
 }
 
-fun Activity.btnSections(context: Context,text: String):TextView{
+fun Activity.btnSections(context: Context,text: String, index:Int):TextView{
     val textView = GenericBtnBinding.inflate(layoutInflater)
     textView.root.text = text
+    textView.root.id = index
     return textView.root
  }
 
