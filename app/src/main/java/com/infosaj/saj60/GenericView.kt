@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
+import androidx.core.view.children
 import androidx.lifecycle.ViewModelProvider
 import com.infosaj.saj60.data.GlobalData
 import com.infosaj.saj60.data.NavElements
@@ -13,6 +15,7 @@ import com.infosaj.saj60.databinding.ActivityGenericViewBinding
 
 class GenericView : AppCompatActivity() {
     private lateinit var binding : ActivityGenericViewBinding
+    private lateinit var readScreen: ReadScreen
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +41,19 @@ class GenericView : AppCompatActivity() {
 
 
         setContentView(view)
+
+        val listBtns = binding.linearLayout.children.filterIsInstance<AppCompatButton>().toList()
+        readScreen = ReadScreen(this,listBtns)
+        binding.play.setOnClickListener {
+          readScreen.startReadBtns()
+        }
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        readScreen.stopReadBtns()
+
     }
 
     fun setBtns(nE : Tela ) {
@@ -63,10 +79,7 @@ class GenericView : AppCompatActivity() {
         }
     }
 
-    override fun onResume() {
-        super.onResume()
 
-    }
 
 
 

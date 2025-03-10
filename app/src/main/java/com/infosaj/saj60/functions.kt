@@ -5,6 +5,7 @@ import android.content.Intent
 import android.app.Activity
 import android.graphics.Color
 import android.graphics.Typeface
+import android.graphics.drawable.GradientDrawable
 import android.net.Uri
 import android.text.SpannableString
 import android.text.style.StyleSpan
@@ -17,23 +18,25 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.core.view.marginBottom
+import com.infosaj.saj60.databinding.BgGenericWhiteBinding
 import com.infosaj.saj60.databinding.CallPhoneBinding
 import com.infosaj.saj60.databinding.CallPhoneCustomBinding
 import com.infosaj.saj60.databinding.GenericBtnBinding
+import com.infosaj.saj60.databinding.GenericCallBtnBinding
 import com.infosaj.saj60.databinding.InfoItemBinding
 import com.infosaj.saj60.databinding.PhoneEmergenBtnBinding
 
 
-fun Activity.btnEmerg(title:String,tel: String) : LinearLayout{
-    val btnLL = PhoneEmergenBtnBinding.inflate(layoutInflater)
-    val btn = btnLL.root
+fun Activity.btnEmerg(title:String,tel: String) : TextView{
+    val btnInf = GenericCallBtnBinding.inflate(layoutInflater)
+    val btn = btnInf.root
 
-    btnLL.titleBtn.text = title
-    btnLL.tvcp.text = tel
+    btn.text = "${title} " + "${tel}"
+
 
     val onlyNumberPhone = tel.filter { it.isDigit() }
 
-    btnLL.callPhoneBtn.setOnClickListener{
+    btn.setOnClickListener{
         val phone = Intent(Intent.ACTION_DIAL).apply {
             data = Uri.parse("tel:$onlyNumberPhone")
         }
@@ -43,22 +46,11 @@ fun Activity.btnEmerg(title:String,tel: String) : LinearLayout{
     return btn
 }
 
-fun Activity.btnEmerg2(tel: String) : LinearLayout{
-    val btnLL = CallPhoneCustomBinding.inflate(layoutInflater)
-    val btn = btnLL.root
+fun Activity.genericTV(context: Context, text: String): TextView {
+    val tv = BgGenericWhiteBinding.inflate(layoutInflater)
+    tv.root.text = text
 
-    btnLL.tvcp.text = tel
-
-    val onlyNumberPhone = tel.filter { it.isDigit() }
-
-    btnLL.callPhoneBtn.setOnClickListener{
-        val phone = Intent(Intent.ACTION_DIAL).apply {
-            data = Uri.parse("tel:$onlyNumberPhone")
-        }
-        startActivity(phone)
-    }
-
-    return btn
+    return tv.root
 }
 
 

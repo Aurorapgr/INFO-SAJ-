@@ -1,4 +1,4 @@
-package com.infosaj.saj60.data
+package com.infosaj.saj60
 
 import android.content.Context
 import android.graphics.Color
@@ -7,10 +7,12 @@ import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.LayerDrawable
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.view.View
+import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import java.util.Locale
 
-class ReadScreen(context: Context, private val btns : List<AppCompatButton>): TextToSpeech.OnInitListener  {
+class ReadScreen(context: Context, private val btns : List<TextView>): TextToSpeech.OnInitListener  {
     private var tts: TextToSpeech = TextToSpeech(context,this)
     private var cIdx = 0
 
@@ -29,15 +31,21 @@ class ReadScreen(context: Context, private val btns : List<AppCompatButton>): Te
 
             override fun onDone(utteranceId: String?) {
                 //Leitura terminou, já chama a próxima
+                clearStroke(btns[cIdx])
                 cIdx++
                 if (cIdx < btns.size){
                     readBtns(cIdx)
+
+
 
                 }
             }
 
             override fun onError(utteranceId: String?) {
-                TODO("Not yet implemented")
+            }
+
+            override fun onStop(utteranceId: String?, interrupted: Boolean) {
+                clearStroke(btns[cIdx])
             }
         })
 
@@ -49,11 +57,16 @@ class ReadScreen(context: Context, private val btns : List<AppCompatButton>): Te
     }
 
     fun startReadBtns(){
-        if (btns.isEmpty()){
+        if (btns.isNotEmpty()){
             cIdx = 0
             readBtns(cIdx)
         }
     }
+
+    fun stopReadBtns(){
+        tts.stop()
+    }
+
 
     private fun readBtns(idx: Int) {
         val btn = btns[idx]
@@ -62,19 +75,20 @@ class ReadScreen(context: Context, private val btns : List<AppCompatButton>): Te
         //Só pra fixar, Bundle é uma caixa de armazenamento de dados
         params.putString(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "ID${idx}")
 
+
+        tts.setSpeechRate(1f)
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, params, "ID${idx}")
 
-        setStrokeBtns(btn,false)
 
     }
 
-    private fun setStrokeBtns(appCompatButton: AppCompatButton, act: Boolean){
+    private fun setStrokeBtns(view: View, act: Boolean){
 
-        val defaultBG : Drawable? = appCompatButton.background
+        val defaultBG : Drawable? = view.background
 
         val borderDrawable = GradientDrawable().apply {
             shape = GradientDrawable.RECTANGLE
-            setStroke(8, if (act) Color.BLACK else Color.TRANSPARENT)
+            setStroke(8, Color.BLACK)
             cornerRadius = 30f
         }
 
@@ -82,9 +96,26 @@ class ReadScreen(context: Context, private val btns : List<AppCompatButton>): Te
         val layers = arrayOf(defaultBG,borderDrawable)
         val layerDrawable = LayerDrawable(layers)
 
-        appCompatButton.post {
-            appCompatButton.background = layerDrawable
+        view.post {
+            view.background = layerDrawable
+        }
+    }
+
+    private  fun clearStroke(view: View ){
+        val defaultBG : Drawable? = view.background
+
+        val borderDrawable = GradientDrawable().apply {
+            shape = GradientDrawable.RECTANGLE
+            setStroke(8, Color.WHITE)
+            cornerRadius = 30f
         }
 
+
+        val layers = arrayOf(defaultBG,borderDrawable)
+        val layerDrawable = LayerDrawable(layers)
+
+        view.post {
+            view.background = layerDrawable
+        }
     }
 }

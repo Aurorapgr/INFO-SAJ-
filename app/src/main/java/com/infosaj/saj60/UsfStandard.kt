@@ -9,9 +9,11 @@ import android.text.style.StyleSpan
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
+import androidx.core.view.children
 import androidx.core.view.updateLayoutParams
 import com.infosaj.saj60.data.DirSegData
 import com.infosaj.saj60.data.LazerEducData
@@ -23,6 +25,8 @@ import com.infosaj.saj60.databinding.CallPhoneBinding
 
 class UsfStandard : AppCompatActivity() {
     private lateinit var binding: ActivityUsfStandardBinding
+    private lateinit var readScreen: ReadScreen
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         window.statusBarColor = ContextCompat.getColor(this, R.color.purple)
@@ -48,9 +52,24 @@ class UsfStandard : AppCompatActivity() {
 
         setterItem(GlobalData.dataObject,GlobalData.dO_GlobalIndex)
 
+        val listBtns = binding.linearLayout.children.filterIsInstance<TextView>().toList()
+        val newList =  listBtns.filterIndexed { i, _ -> i != 0 }
 
+        readScreen = ReadScreen(this,newList)
+
+
+
+        binding.play.setOnClickListener {
+            readScreen.startReadBtns()
+        }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        readScreen.stopReadBtns()
 
     }
+
 
     private fun setterItem(obj: List<InfoDataConstructor>, i: Int) {
         val mutableList = mutableListOf<String>()
@@ -72,6 +91,11 @@ class UsfStandard : AppCompatActivity() {
 
         infoBuilder(mutableList, obj, i)
         phoneItemConstructor(100, 1, phoneItem)
+
+
+
+
+
     }
 
     private fun infoBuilder(mList: MutableList<String>, obj: List<InfoDataConstructor>, i: Int) {
