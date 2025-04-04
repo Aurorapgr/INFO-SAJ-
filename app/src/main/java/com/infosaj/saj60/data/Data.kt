@@ -4,409 +4,372 @@ import com.infosaj.saj60.R
 
 
 object Data {
-    val list : List<List<UsfConstructor>> = listOf(
-        listOf(
-            UsfConstructor(
-                img = 0,
-                id = R.id.usfAlMo,
-                usfName = "USF Alto do Morro",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: POVOADO ALTO DO MORRO S/N ZONA RURAL\n" +
-                        "CEP: 44435428 - Alto do Morro - Santo Antônio de Jesus - BA",
-                phone = "Telefone: (75) 3632-4482",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária e faz acompanhamento de pré-natal de risco habitual.",
-                team = "Equipe: É composta  por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, médicos e cirurgião dentista."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_asa,
-                id = R.id.usfASA,
-                usfName = "USF ALTO SANTO ANTÔNIO",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua 12, S/N. CEP: 44435428, Bairro Alto Santo Antônio, Santo Antônio de Jesus.",
-                phone = "Telefone: (75) 3631-5654",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, monitora diagnósticos e tratamentos e atua sobre a vigilância epidemiológica.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_asieii,
-                id = R.id.usfASIeII,
-                usfName = "USF ALTO SOBRADINHO I e II",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "",
-                phone = "",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A Unidade conta com monitor de pressão não invasivo e reanimador pulmonar/ambu, que tem função de reoxigenar o paciente, caso precise. Também é realizado o acompanhamento do pré-natal de risco habitual e possui farmácia.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos de enfermagem, enfermeiros, médicos, cirurgião dentista e auxiliar de saúde bucal."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_and,
-                id = R.id.usfAnd,
-                usfName = "USF DO ANDAIÁ",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua Teodoro Dias Barreto, n° 799. CEP: 44435428 - Andaia - Santo Antônio de Jesus - BA",
-                phone = "Telefone: (75) 3631-4689",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia acomoanha diagnósticos e tratamentos, realiza vigilância epidemiológica do local e oferece atendimento psicossocial.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, médico, auxiliar em saúde bucal e cirurgião dentista. "
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_amp,
-                id = R.id.usfAmp,
-                usfName = "USF DO AMPARO",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Av. Vereador João Silva, s/n, CEP 44436174, Bairro Amparo.",
-                phone = "",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia e atua com a saúde da família.",
-                team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_apdr,
-                id = R.id.usfAPDR,
-                usfName = "USF AURELINO PEREIRA DOS REIS",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua Marieta Martins 101. CEP: 44573250 -  Bairro Radio Clube - Santo Antônio de Jesus - BA",
-                phone = "Telefone: (75) 3632-4751",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: Possui farmácia, realiza diagnóstico e tratamento, faz acompanhamento de pré-natal e realiza vigilância epidemiológica.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos de enfermagem, enfermeiros, médico, cirurgião dentista e auxiliar de saúde bucal."
-            ),
-            UsfConstructor(
-                img = 0,
-                id = R.id.usfBID,
-                usfName = "USF Bairro Irmã Dulce",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua Amaral, S/N. CEP: 44572901 - Irmã Dulce",
-                phone = "Telefone: (75) 3631-6659",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, monitora diagnósticos e tratamentos e atua sobre a vigilância epidemiológica.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médico e profissional de educação física."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_bv,
-                id = R.id.usfBV,
-                usfName = "USF BELA VISTA",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: RUA BELA VISTA 383, CEP: 44574520 - Cajueiro - Santo Antônio de Jesus - BA",
-                phone = "Telefone: (75) 3632-9632",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária, faz acompanhamento de pré-natal de risco habitual e faz acompanhamento de pessoas com diagnósticos e que precisam de tratamentos.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médico."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_bvb,
-                id = R.id.usfBVB,
-                usfName = "USF BOA VISTA BOMFIM",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Comunidade do Bomfim, s/n, Zona Rural. CEP 44572901.",
-                phone = "Telefone: (75) 98872-3854",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, realiza diagnóstico e e acompanha tratamentos e faz a vigilância epidemiológica.",
-                team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médico, fisioterapeuta, farmacêutico, psicólogo, nutricionista"
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_cf,
-                id = R.id.usfCF,
-                usfName = "UBS CASACA DE FERRO",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Fazenda Casaca de Ferro s/n. Zona Rural - Santo Antônio de Jesus",
-                phone = "Telefone: (75) 3632-4482",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: Possui Farmácia",
-                team = "Equipe: Técnicos em enfermagem"
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_cnii,
-                id = R.id.usfCNII,
-                usfName = "UBS CIDADE NOVA II",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "",
-                phone = "",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A Unidade possui farmácia e faz acompanhamento do pré-natal de risco habitual. ",
-                team = "Equipe: Cirurgião dentista, auxiliar de saúde bucal, enfermeiro, técnico em enfermagem, médico clínico e agente comunitário de saúde."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_cui,
-                id = R.id.usfCUI,
-                usfName = "USF DO CALABAR URBIS I",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua do Calabar, Urbis I, n° 690, CEP 44435428",
-                phone = "",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, realiza diagnóstico e acompanha tratamentos e possui reanimadores pulmonares.",
-                team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médico."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_fq,
-                id = R.id.usfFQ,
-                usfName = "USF FERNANDO QUEIROZ",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Urbis IV, Caminho 03 CEP: 44574270, Bairro providência.",
-                phone = "Telefone: (75) 3632-4281",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia e faz o controle da vigilância epidemiológica.",
-                team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médicos, assistente social, farmacêutico, fisioterapeuta e nutricionista."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_gpsii,
-                id = R.id.usfGPSII,
-                usfName = "USF GERALDO PESSOA SALLES II",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Loteamento Sol Nascente, n° 148 CEP: 44572040 - Barro Vermelho",
-                phone = "Telefone: (75) 3632-4281",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, realiza diagnóstico e acompanha tratamentos.",
-                team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_ma,
-                id = R.id.usfMA,
-                usfName = "USF MARITA AMÂNCIO",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: RUA NOVA DO CAJUEIRO 65, CEP: 44435428 - Cajueiro - Santo Antônio de Jesus - BA",
-                phone = "",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária, acompanha diagnósticos e tratamentos e faz acompanhamento de pré-natal de risco habitual. ",
-                team = "Equipe: É composta  por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, médicos, cirurgião dentista e auxiliar de saúde bucal."
-            ),
-            UsfConstructor(
-                img = 0,
-                id = R.id.usfPCMS,
-                usfName = "USF DO POVOADO DO COCAO MINAS DO SAPÉ",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Comunidade Minas do Sapé, s/n Zona Rural Cocão - Santo Antônio de Jesus - BA",
-                phone = "Telefone: (75) 98154-5197",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, equipamentos de raio-x dentário, reanimadores pulmonares e a unidade controla a vigilância epidemiológica.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, cirurgião dentista, auxiliar de saúde bucal, médico e enfermeiro"
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_sfieii,
-                id = R.id.usfSFIeII,
-                usfName = "USF SÃO FRANCISCO I E II",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua Wellington Figueiredo, n° 72, casa. São Benedito. CEP: 44572901",
-                phone = "Telefone: (75) 3632-4807",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária, faz acompanhamento de pré-natal de risco habitual e faz acompanhamento de pessoas com diagnósticos e que precisam de tratamentos.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_sp,
-                id = R.id.usfSP,
-                usfName = "USF SÃO PAULO",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Antiga rua D, complemento: Rua B",
-                phone = "Telefone: (75) 3632-4485",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços:  A Unidade possui farmácia, realiza a vigilância sanitária, faz acompanhamento de pré-natal de risco habitual e faz acompanhamento de pessoas com diagnósticos e que precisam de tratamentos.",
-                team = "Equipe: A equipe é composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médicos, profissional de educação física e auxiliar de laboratório de análises clínicas. "
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_sm,
-                id = R.id.usfSM,
-                usfName = "USF SANTA MADALENA",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua Justiniano Rocha Galvão, n°320, Bairro Santa Madalena.",
-                phone = "Telefone: (75) 3631-5654",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual e possui farmácia.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros e médico."
-            ),
-            UsfConstructor(
-                img = 0,
-                id = R.id.usfUIII,
-                usfName = "USF URBIS III",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua A, S/N, Urbis III, cep 44435428, Bairro Santa Terezinha.",
-                phone = "Telefone: (75) 3632-4710 ",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, monitora diagnósticos e tratamentos e atua sobre a vigilância epidemiológica.",
-                team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
-            ),
-            UsfConstructor(
-                img = R.drawable.usf_vl,
-                id = R.id.usfVL,
-                usfName = "USF VIRIATO LOBO",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Rua João Mota de Oliveira, sem número, Cajueiro, Santo Antônio de Jesus.",
-                phone = "Telefone: (75) 3631-5654",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária, realiza atendimento psicossocial, faz acompanhamento de pré-natal de risco habitual e faz acompanhamento de pessoas com diagnósticos e que precisam de tratamentos.",
-                team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médicos e profissional de educação física"
-            ),
-            UsfConstructor(
-                img = 0,
-                id = R.id.usfZA,
-                usfName = "UBS ZILDA ARNS",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
-                addr = "Endereço: Avenida Carlos Amaral, s/n, CEP 44571000",
-                phone = "",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, realiza diagnóstico e acompanha tratamentos e faz a vigilância epidemiológica.",
-                team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
-            ),
-            UsfConstructor(
-                img = R.drawable.def_pub,
-                id = R.id.DP,
-                usfName = "DEFENSORIA PÚBLICA",
-                aten = "Atendimento: 8h às 12 e 13h às 17h",
-                addr = "Endereço: Rua Ver. Albertino Lira, n° 01 - bairro Quitandinha, Santo Antônio de Jesus - BA.",
-                phone = "Telefone: (75) 3632-0712",
-                email = "",
-                insta = "Instagram: defensoriabahia\n"+
-                        "Facebook: defensoria.bahia",
-                info = "Informações: \n"+
-                        "Você Sabia que a Defensoria presta atenção Jurídica aos vulneráveis, garantindo comunicação com os órgãos de Saúde e/ou ações judiciais, a realização de consultas, exames, cirurgias, internamentos, medicações, entre outras necessidades? \n"+
-                        "Quando o cidadão busca o posto de saúde de seu bairro, a farmácia popular ou o hospital público e não é atendido por qualquer motivo, ele pode buscar ajuda na defensoria.\n" +
-                        "A Defensoria sempre busca resolver a situação mantendo o diálogo com os órgãos competentes pelos serviços de saúde\n"+
-                        "Por exemplo: Em uma situação de uma cirurgia urgente, em que o hospital esteja demorando para marcar a cirurgia/chamar o paciente, ele pode ir até a defensoria pública relatar sua necessidade e o atraso do sistema de saúde, pois pelo Sistema Único de Saúde (SUS) devem ser oferecidos," +
-                        " de maneira gratuita, remédios (especialmente os de uso continuado), próteses, órteses, fraldas geriátricas, consultas, exames, internações," +
-                        " atendimento domiciliar e outros recursos referentes ao tratamento, habilitação ou reabilitação.\n" +
-                        "O artigo 16 do Estatuto da pessoa Idosa assegura que quando a pessoa estiver " +
-                        "internada ou em observação tem o direito a acompanhante em tempo integral, exceto onde não " +
-                        "é possível isto (UTI, CTI, isolamento).\n"+
-                        "Com relação ao tratamento de saúde, cabe à pessoa idosa escolher, dentre as opções " +
-                        "dadas pelo médico, o tratamento mais favorável.\n"+
-                        "Caso o(a) idoso(a) não possa decidir (por não estar com plena capacidade mental), seu curador ou seus familiares decidirão no seu lugar.\n"+
-                        "Em caso de urgência ou emergência, e se não houver tempo hábil para contactar familiares/curador," +
-                        " a decisão caberá ao médico. A mensalidade do plano de saúde da pessoa idosa não pode ser " +
-                        "reajustada em percentuais diferentes dos demais, em razão da idade." +
-                        " Os planos de saúde são divididos por faixa etária, assim, o último aumento, em razão da idade, só poderá ocorrer até os 59 anos.",
-                docm = "Documentos: É necessário estar com\n" +
-                        "Relatório médico atualizado\n" +
-                        "Requisição ou solicitação médica\n" +
-                        "Documentos Pessoais do paciente: RG, CPF e Comprovante de residência\n" +
-                        "Cartão do SUS",
-                serv = "",
-                team = ""
-            )
+    val usfs : List<InfoDataConstructor> = listOf(
+        InfoDataConstructor(
+            img = 0,
+            id = 0,
+            usfName = "USF Alto do Morro",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: POVOADO ALTO DO MORRO S/N ZONA RURAL\n" +
+                    "CEP: 44435428 - Alto do Morro - Santo Antônio de Jesus - BA",
+            phone = "Telefone: (75) 3632-4482",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária e faz acompanhamento de pré-natal de risco habitual.",
+            team = "Equipe: É composta  por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, médicos e cirurgião dentista."
         ),
-        listOf(
-                UsfConstructor(
-                    img = R.drawable.idsaj,
-                    id = R.id.IDSAJ,
-                    usfName = "IDSAJ - Instituto dos Diabéticos de SAJ",
-                    aten = "Atendimento: Segunda à Sexta, das 8h às 11h30 e das 14h às 16h30",
-                    addr = "Endereço:  Rua Expedicionário n°226, Centro, Santo Antônio de Jesus, Bahia, Brasil, 44570000.",
-                    phone = "Telefone: 75 98326-1528",
-                    email = "",
-                    insta = "Instagram: idsajoficial",
-                    info = "",
-                    docm = "",
-                    serv = "Serviços:  Além do público diabético, é também acolhido o público com fibromialgia. \n" +
-                            "Para os pacientes serem cadastrados no IDSAJ, é necessário estar cadastrado em algum serviço do SUS,  o objetivo do IDSAJ é ser um complemento a outros serviços de saúde.\n" +
-                            "Documentos Necessários na primeira ida: RG,cartão do SUS e Comprovante de residência. O Instituto acolhe o público independente da renda, não possui pagamento mensal, eles deixam aberto a possibilidade de receber doações, caso alguém se sinta à vontade." +
-                            "Uma das salas do Instituto é direcionada para o público que necessita de alguma acessibilidade por ter mobilidade reduzida.",
-                    team = "Equipe: É composta por  médicos, nutricionistas, educadores físicos, psicanalistas, terapeutas holísticas, enfermeiros, fisioterapeutas, assistentes sociais."
-                ),
-            UsfConstructor(
-                img = R.drawable.asdev,
-                id = R.id.ASDEV,
-                usfName = "ASDEV - Associação Santantoniense dos Deficientes Visuais",
-                aten = "Atendimento: Segunda à Sexta, das 8h às 12h e das 13h às 16h30.",
-                addr = "Endereço: Rua Vereador João Silva, s/n°, Centro - Santo Antônio de Jesus (No espaço São João), 44430-076",
-                phone = "Telefone: (75) 98213-3562\n",
-                email = "Email: associacaoasdev@gmail.com\n",
-                insta = "Instagram: associacaoasdev\n",
-                info = "",
-                docm = "",
-                serv = "",
-                team = ""
-            ),
-            UsfConstructor(
-                img = R.drawable.lar_dos_idosos,
-                id = R.id.LarIdo,
-                usfName = "Lar dos Idosos",
-                aten = "Atendimento: 14h às 15h (horário de visita)",
-                addr = "Endereço: Av. Luís Argolo, s/n°, centro, Santo Antônio de Jesus.",
-                phone = "Telefone: (75) 3631-2559",
-                email = "",
-                insta = "",
-                info = "",
-                docm = "",
-                serv = "Serviços: O lar dos idosos possui uma parceria com a Santa Casa de Misericórdia e é assistida pelo Ministério Público. Recebem homens a partir dos 65 anos e mulheres a partir dos 60.",
-                team = "Equipe: O Lar conta com uma equipe multiprofissional composta por técnicos em enfermagem, enfermeiros, psicólogos, médicos e fisioterapeutas, visando uma melhor qualidade de vida para as pessoas acolhidas. Para uma pessoa idosa residir no Lar há alguns critérios, como entrevistas com os pacientes e avaliações por médicos. A prioridade é de residentes do município de Santo Antônio de Jesus."
-            )
+        InfoDataConstructor(
+            img = R.drawable.usf_asa,
+            id = 0,
+            usfName = "USF ALTO SANTO ANTÔNIO",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua 12, S/N. CEP: 44435428, Bairro Alto Santo Antônio, Santo Antônio de Jesus.",
+            phone = "Telefone: (75) 3631-5654",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, monitora diagnósticos e tratamentos e atua sobre a vigilância epidemiológica.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
         ),
-
-
-
+        InfoDataConstructor(
+            img = R.drawable.usf_asieii,
+            id = 0,
+            usfName = "USF ALTO SOBRADINHO I e II",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "",
+            phone = "",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A Unidade conta com monitor de pressão não invasivo e reanimador pulmonar/ambu, que tem função de reoxigenar o paciente, caso precise. Também é realizado o acompanhamento do pré-natal de risco habitual e possui farmácia.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos de enfermagem, enfermeiros, médicos, cirurgião dentista e auxiliar de saúde bucal."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_and,
+            id = 0,
+            usfName = "USF DO ANDAIÁ",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua Teodoro Dias Barreto, n° 799. CEP: 44435428 - Andaia - Santo Antônio de Jesus - BA",
+            phone = "Telefone: (75) 3631-4689",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia acompanha diagnósticos e tratamentos, realiza vigilância epidemiológica do local e oferece atendimento psicossocial.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, médico, auxiliar em saúde bucal e cirurgião dentista. "
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_amp,
+            id = 0,
+            usfName = "USF DO AMPARO",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Av. Vereador João Silva, s/n, CEP 44436174, Bairro Amparo.",
+            phone = "",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia e atua com a saúde da família.",
+            team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_apdr,
+            id = 0,
+            usfName = "USF AURELINO PEREIRA DOS REIS",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua Marieta Martins 101. CEP: 44573250 -  Bairro Radio Clube - Santo Antônio de Jesus - BA",
+            phone = "Telefone: (75) 3632-4751",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: Possui farmácia, realiza diagnóstico e tratamento, faz acompanhamento de pré-natal e realiza vigilância epidemiológica.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos de enfermagem, enfermeiros, médico, cirurgião dentista e auxiliar de saúde bucal."
+        ),
+        InfoDataConstructor(
+            img = 0,
+            id = 0,
+            usfName = "USF Bairro Irmã Dulce",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua Amaral, S/N. CEP: 44572901 - Irmã Dulce",
+            phone = "Telefone: (75) 3631-6659",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, monitora diagnósticos e tratamentos e atua sobre a vigilância epidemiológica.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médico e profissional de educação física."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_bv,
+            id = 0,
+            usfName = "USF BELA VISTA",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: RUA BELA VISTA 383, CEP: 44574520 - Cajueiro - Santo Antônio de Jesus - BA",
+            phone = "Telefone: (75) 3632-9632",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária, faz acompanhamento de pré-natal de risco habitual epo acompanhamento de pessoas com diagnósticos e que precisam de tratamentos.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médico."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_bvb,
+            id = 0,
+            usfName = "USF BOA VISTA BOMFIM",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Comunidade do Bomfim, s/n, Zona Rural. CEP 44572901.",
+            phone = "Telefone: (75) 98872-3854",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, realiza diagnóstico, acompanha tratamentos e faz a vigilância epidemiológica.",
+            team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médico, fisioterapeuta, farmacêutico, psicólogo, nutricionista"
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_cf,
+            id = 0,
+            usfName = "UBS CASACA DE FERRO",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Fazenda Casaca de Ferro s/n. Zona Rural - Santo Antônio de Jesus",
+            phone = "Telefone: (75) 3632-4482",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: Possui Farmácia",
+            team = "Equipe: Técnicos em enfermagem"
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_cnii,
+            id = 0,
+            usfName = "UBS CIDADE NOVA II",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "",
+            phone = "",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A Unidade possui farmácia e faz acompanhamento do pré-natal de risco habitual. ",
+            team = "Equipe: Cirurgião dentista, auxiliar de saúde bucal, enfermeiro, técnico em enfermagem, médico clínico e agente comunitário de saúde."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_cui,
+            id = 0,
+            usfName = "USF DO CALABAR URBIS I",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua do Calabar, Urbis I, n° 690, CEP 44435428",
+            phone = "",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, realiza diagnóstico e acompanha tratamentos e possui reanimadores pulmonares.",
+            team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médico."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_fq,
+            id = 0,
+            usfName = "USF FERNANDO QUEIROZ",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Urbis IV, Caminho 03 CEP: 44574270, Bairro providência.",
+            phone = "Telefone: (75) 3632-4281",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia e faz o controle da vigilância epidemiológica.",
+            team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médicos, assistente social, farmacêutico, fisioterapeuta e nutricionista."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_gpsii,
+            id = 0,
+            usfName = "USF GERALDO PESSOA SALLES II",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Loteamento Sol Nascente, n° 148 CEP: 44572040 - Barro Vermelho",
+            phone = "Telefone: (75) 3632-4281",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, realiza diagnóstico e acompanha tratamentos.",
+            team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_ma,
+            id = 0,
+            usfName = "USF MARITA AMÂNCIO",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: RUA NOVA DO CAJUEIRO 65, CEP: 44435428 - Cajueiro - Santo Antônio de Jesus - BA",
+            phone = "",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária, acompanha diagnósticos e tratamentos e faz acompanhamento de pré-natal de risco habitual. ",
+            team = "Equipe: É composta  por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, médicos, cirurgião dentista e auxiliar de saúde bucal."
+        ),
+        InfoDataConstructor(
+            img = 0,
+            id = 0,
+            usfName = "USF DO POVOADO DO COCAO MINAS DO SAPÉ",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Comunidade Minas do Sapé, s/n Zona Rural Cocão - Santo Antônio de Jesus - BA",
+            phone = "Telefone: (75) 98154-5197",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, equipamentos de raio-x dentário, reanimadores pulmonares e a unidade controla a vigilância epidemiológica.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, cirurgião dentista, auxiliar de saúde bucal, médico e enfermeiro"
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_sfieii,
+            id = 0,
+            usfName = "USF SÃO FRANCISCO I E II",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua Wellington Figueiredo, n° 72, casa. São Benedito. CEP: 44572901",
+            phone = "Telefone: (75) 3632-4807",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária, faz acompanhamento de pré-natal de risco habitual e faz acompanhamento de pessoas com diagnósticos e que precisam de tratamentos.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_sp,
+            id = 0,
+            usfName = "USF SÃO PAULO",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Antiga rua D, complemento: Rua B",
+            phone = "Telefone: (75) 3632-4485",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços:  A Unidade possui farmácia, realiza a vigilância sanitária, faz acompanhamento de pré-natal de risco habitual e faz acompanhamento de pessoas com diagnósticos e que precisam de tratamentos.",
+            team = "Equipe: A equipe é composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médicos, profissional de educação física e auxiliar de laboratório de análises clínicas. "
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_sm,
+            id = 0,
+            usfName = "USF SANTA MADALENA",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua Justiniano Rocha Galvão, n°320, Bairro Santa Madalena.",
+            phone = "Telefone: (75) 3631-5654",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual e possui farmácia.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros e médico."
+        ),
+        InfoDataConstructor(
+            img = 0,
+            id = 0,
+            usfName = "USF URBIS III",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua A, S/N, Urbis III, cep 44435428, Bairro Santa Terezinha.",
+            phone = "Telefone: (75) 3632-4710 ",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, monitora diagnósticos e tratamentos e atua sobre a vigilância epidemiológica.",
+            team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.usf_vl,
+            id = 0,
+            usfName = "USF VIRIATO LOBO",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Rua João Mota de Oliveira, sem número, Cajueiro, Santo Antônio de Jesus.",
+            phone = "Telefone: (75) 3631-5654",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A Unidade possui farmácia, realiza a vigilância sanitária, realiza atendimento psicossocial, faz acompanhamento de pré-natal de risco habitual e faz acompanhamento de pessoas com diagnósticos e que precisam de tratamentos.",
+            team = "Equipe: É composta por agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista, médicos e profissional de educação física"
+        ),
+        InfoDataConstructor(
+            img = 0,
+            id = 0,
+            usfName = "UBS ZILDA ARNS",
+            aten = "Atendimento: Segunda à Sexta, das 8h às 17h",
+            addr = "Endereço: Avenida Carlos Amaral, s/n, CEP 44571000",
+            phone = "",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: A unidade realiza acompanhamento de pré-natal de risco habitual, possui farmácia, realiza diagnóstico, acompanha tratamentos e faz a vigilância epidemiológica.",
+            team = "Equipe: É composta por  agentes comunitários de saúde, técnicos em enfermagem, enfermeiros, auxiliar em saúde bucal, cirurgião dentista e médicos."
+        )
     )
 
-    val sus : List<UsfConstructor> = listOf(
-        UsfConstructor(
+
+    val instOngs : List<InfoDataConstructor> = listOf(
+        InfoDataConstructor(
+            img = R.drawable.idsaj,
+            id = 0,
+            usfName = "IDSAJ - Instituto dos Diabéticos de SAJ",
+            aten = "Atendimento: Segunda a Sexta, das 8h às 11h30 e das 14h às 16h30",
+            addr = "Endereço:  Rua Expedicionário n°226, Centro, Santo Antônio de Jesus, Bahia, Brasil, 44570000.",
+            phone = "Telefone: 75 98326-1528",
+            email = "",
+            insta = "Instagram: idsajoficial",
+            info = "",
+            docm = "",
+            serv = "Serviços:  Além do público diabético, é também acolhido o público com fibromialgia. \n" +
+                    "Para os pacientes serem cadastrados no IDSAJ, é necessário estar cadastrado em algum serviço do SUS,  o objetivo do IDSAJ é ser um complemento a outros serviços de saúde.\n" +
+                    "Documentos Necessários na primeira ida: RG, cartão do SUS e comprovante de residência. O Instituto acolhe o público independente da renda e não possui pagamento mensal. Deixam aberta a possibilidade de receber doações caso alguém se sinta à vontade." +
+                    "\n"+
+                    "Uma das salas do Instituto é destinada ao público que necessita de acessibilidade por ter mobilidade reduzida.",
+            team = "Equipe: É composta por  médicos, nutricionistas, educadores físicos, psicanalistas, terapeutas holísticas, enfermeiros, fisioterapeutas, assistentes sociais."
+        ),
+        InfoDataConstructor(
+            img = R.drawable.asdev,
+            id = 0,
+            usfName = "ASDEV - Associação Santantoniense dos Deficientes Visuais",
+            aten = "Atendimento: Segunda a Sexta, das 8h às 12h e das 13h às 16h30.",
+            addr = "Endereço: Rua Vereador João Silva, s/n°, Centro - Santo Antônio de Jesus (no espaço São João), 44430-076",
+            phone = "Telefone: (75) 98213-3562\n",
+            email = "E-mail: associacaoasdev@gmail.com\n",
+            insta = "Instagram: associacaoasdev\n",
+            info = "",
+            docm = "",
+            serv = "",
+            team = ""
+        ),
+        InfoDataConstructor(
+            img = R.drawable.lar_dos_idosos,
+            id = 0,
+            usfName = "Lar dos Idosos",
+            aten = "Atendimento: das 14h às 15h (horário de visita)",
+            addr = "Endereço: Av. Luís Argolo, s/n°, centro, Santo Antônio de Jesus.",
+            phone = "Telefone: (75) 3631-2559",
+            email = "",
+            insta = "",
+            info = "",
+            docm = "",
+            serv = "Serviços: O lar dos idosos possui parceria com a Santa Casa de Misericórdia e é assistido pelo Ministério Público. Recebe homens a partir de 65 anos e mulheres a partir de 60.",
+            team = "Equipe: O Lar conta com uma equipe multiprofissional composta por técnicos em enfermagem, enfermeiros, psicólogos, médicos e fisioterapeutas, visando uma melhor qualidade de vida para as pessoas acolhidas. Para uma pessoa idosa residir no Lar há alguns critérios, como entrevistas com os pacientes e avaliações por médicos. A prioridade é para residentes do município de Santo Antônio de Jesus."
+        )
+    )
+
+    val sus : List<InfoDataConstructor> = listOf(
+        InfoDataConstructor(
             img = R.drawable.poli_reg,
-            id = R.id.PCRE,
+            id = 0,
             usfName = "Policlínica Regional",
             aten = "Atendimento: 24 H",
             addr = "Endereço: Rua do Cajueiro, s/ número, cep 44570-000 (antiga rua Viriato Lobo)",
@@ -432,9 +395,9 @@ object Data {
             serv = "Serviços: Uma unidade Especializada de Apoio Diagnóstico e Terapêutico com serviços de consultas clínicas especializadas em exames gráficos e de imagem. Não é possível chegar e ser atendido na Policlínica. Elas atendem através de um agendamento feito pelas Secretarias de Saúde dos municípios consorciados",
             team = "Equipe: Multiprofissional"
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = R.drawable.hrsaj,
-            id = R.id.HRSAJ,
+            id = 0,
             usfName = "Hospital Regional",
             aten = "Atendimento: 24H",
             addr = "Endereço: Rua Treze de Maio, 81. Santo Antônio de Jesus, BA, 44572-120",
@@ -448,9 +411,9 @@ object Data {
                     " queimaduras, e exames como microbiológicos, imunohematológicos, do aparelho digestivo, ultrassonografia e eletrocardiograma.",
             team = "Equipe: Multiprofissional"
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = R.drawable.sec_de_saude,
-            id = R.id.PCMU,
+            id = 0,
             usfName = "Policlínica Municipal",
             aten = "Atendimento: 24H",
             addr = "Endereço: Praça Egídio Moreira, bairro São Cristóvão,  ao lado do clube dos 100 - Santo Antônio de Jesus - BA",
@@ -471,12 +434,13 @@ object Data {
                     "● Urologia\n" +
                     "● Fonoaudiologia\n" +
                     "● Angiologista\n" +
-                    "● E exames como Urofloxometria (tem como objetivo observar as características do fluxo urinário do paciente) , Colposcopia (exame de colo de útero), Inserção de Diu e Cauterizaçãoo.",
+                    "\n" +
+                    "Também realiza exames como Urofloxometria (tem como objetivo observar as características do fluxo urinário do paciente) , Colposcopia (exame de colo de útero), Inserção de Diu e Cauterizaçãoo.",
             team = "Equipe: Multiprofissional"
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = R.drawable.unacon,
-            id = R.id.UNACON,
+            id = 0,
             usfName = "UNACON",
             aten = "Atendimento: 24 H para situações emergênciais, enquanto a parte ambulatorial funciona de segunda à sexta (Horário comercial)",
             addr = "Endereço: Av. Luís Argôlo, 128 - Centro, Santo Antônio de Jesus - BA, 44572-030",
@@ -492,10 +456,10 @@ object Data {
             team = "Equipe: Há uma equipe multiprofissional à disposição de todos os pacientes, elevando entre estes critérios de maior vulnerabilidade.\n"
         )
     )
-    val servUFRB : List<UsfConstructor> = listOf(
-        UsfConstructor(
+    val servUFRB : List<InfoDataConstructor> = listOf(
+        InfoDataConstructor(
             img = 0,
-            id = R.id.LABCOV,
+            id = 0,
             usfName = "Laboratório de Vigilância e Diagnóstico Avançado",
             aten = "Atendimento: Segunda à Sexta das 8h  às 12h e das 13h às 17h, sendo que na sexta não funciona em turno vespertino.",
             addr = "Endereço: Avenida Carlos Amaral, R. do Cajueiro, 1015, Santo Antônio de Jesus - BA, 44574-490. UFRB -Universidade Federal do Recôncavo da Bahia.",
@@ -510,9 +474,9 @@ object Data {
                     "O Labcov é aberto a todos os tipos de público e oferece orientações ao servidor e, se necessário, também um atestado. O espaço está apto para receber pessoas com mobilidade reduzida, como deficiência locomotiva, pessoas gestantes, idosos, pessoas obesas, pessoas cegas ou com deficiência visual.",
             team = "Equipe: Multiprofissional"
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = 0,
-            id = R.id.servPSI,
+            id = 0,
             usfName = "SERVIÇO DE PSICOLOGIA",
             aten = "Atendimento: Segunda à quinta das 07:30 às 12:00 e de 13:00 às 17:30. Às sextas, o funcionamento é até às 16:30.",
             addr = "Endereço: Avenida Carlos Amaral, R. do Cajueiro, 1015, Santo Antônio de Jesus - BA, 44574-490. UFRB -Universidade Federal do Recôncavo da Bahia",
@@ -528,10 +492,10 @@ object Data {
             team = "Equipe: Multiprofissional"
         )
     )
-    val assSocial : List<UsfConstructor> = listOf(
-        UsfConstructor(
+    val assSocial : List<InfoDataConstructor> = listOf(
+        InfoDataConstructor(
             img = 0,
-            id = R.id.CRAS,
+            id = 0,
             usfName = "CRAS",
             aten = "Atendimento: Segunda à Sexta, das 8h às 17h, não fecha pra almoço, mas as assistentes sociais saem.",
             addr = "Endereços: \n" +
@@ -596,9 +560,9 @@ object Data {
             serv = "",
             team = ""
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = 0,
-            id = R.id.CREAS,
+            id = 0,
             usfName = "CREAS",
             aten = "",
             addr = "Endereço: Praça CLEUS, rua/caminho B, URBIS I, N°30.",
@@ -619,9 +583,9 @@ object Data {
                     "e favorecer a reparação da situação de violência vivida.",
             team = ""
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = R.drawable.esconv,
-            id = R.id.ESCONV,
+            id = 0,
             usfName = "Espaço Conviver SAJ",
             aten = "Atendimento: Segunda à sexta, das 08h às 17h",
             addr = "Endereço: Rua Castro Alves, Centro, n°67, sentido à rua do cajueiro.",

@@ -13,12 +13,14 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
+import androidx.core.view.children
 import androidx.core.view.updateLayoutParams
 import com.infosaj.saj60.data.CompliantConstructor
 import com.infosaj.saj60.data.DirSegData
 import com.infosaj.saj60.databinding.ActivityComplaintBinding
 
 class Complaint : AppCompatActivity() {
+    private lateinit var readScreen: ReadScreen
     private lateinit var binding: ActivityComplaintBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +50,19 @@ class Complaint : AppCompatActivity() {
         binding.back.setOnClickListener{
             finish()
         }
+
+        val listBtns = binding.linearLayout.children.filterIsInstance<TextView>().toList()
+        readScreen = ReadScreen(this,listBtns)
+        binding.play.setOnClickListener {
+            readScreen.startReadBtns()
+        }
+
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        readScreen.stopReadBtns()
 
     }
 

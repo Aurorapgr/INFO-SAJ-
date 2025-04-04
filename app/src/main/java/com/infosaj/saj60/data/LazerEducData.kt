@@ -3,10 +3,10 @@ package com.infosaj.saj60.data
 import com.infosaj.saj60.R
 
 object LazerEducData {
-    val lazerEduca : List<UsfConstructor> = listOf(
-        UsfConstructor(
+    val lazerEduca : List<InfoDataConstructor> = listOf(
+        InfoDataConstructor(
             img = R.drawable.uneb,
-            id = R.id.UATI,
+            id = 0,
             usfName = "UATI",
             aten = "",
             addr = "Endereço: Rua Tenente-Cel. Bandeira de Melo - São Benedito, Santo Antônio de Jesus - BA, 44571-003, as atividades ocorrem no auditório da UNEB.",
@@ -22,9 +22,9 @@ object LazerEducData {
             docm = "Documentos: Para a primeira ida os documentos pedidos são RG, CPF, comprovante de endereço, carteira do SUS e/ou plano de saúde.",
             serv = "",
             team = ""
-        ), UsfConstructor(
+        ), InfoDataConstructor(
             img = R.drawable.vosa,
-            id = R.id.VOSA,
+            id = 0,
             usfName = "VOSA",
             aten = "Atendimento: De segunda à sexta, de 8h às 12h e das 14h às 17h, aos sábados funciona de 8h às 12h.",
             addr = "Endereço: Praça são José, Andaiá, procurar por secretaria paroquial, em frente ao supermercado sacolão do povo.",
@@ -46,9 +46,9 @@ object LazerEducData {
             docm = "Documentos: Recomendados na primeira ida à secretaria paroquial: RG ou qualquer documento com foto.",
             serv = "",
             team = ""
-        ), UsfConstructor(
+        ), InfoDataConstructor(
             img = 0,
-            id = R.id.SECEDU,
+            id = 0,
             usfName = "SECRETARIA DE EDUCAÇÃO",
             aten = "Endereço: Praça Me. Rosário, 219 - Centro, Santo Antônio de Jesus - BA, 44571-032",
             addr = "",

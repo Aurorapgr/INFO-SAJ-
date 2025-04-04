@@ -9,19 +9,24 @@ import android.text.style.StyleSpan
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
+import androidx.core.view.children
 import androidx.core.view.updateLayoutParams
 import com.infosaj.saj60.data.DirSegData
 import com.infosaj.saj60.data.LazerEducData
-import com.infosaj.saj60.data.UsfConstructor
+import com.infosaj.saj60.data.InfoDataConstructor
 import com.infosaj.saj60.data.Data
+import com.infosaj.saj60.data.GlobalData
 import com.infosaj.saj60.databinding.ActivityUsfStandardBinding
 import com.infosaj.saj60.databinding.CallPhoneBinding
 
 class UsfStandard : AppCompatActivity() {
     private lateinit var binding: ActivityUsfStandardBinding
+    private lateinit var readScreen: ReadScreen
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         window.statusBarColor = ContextCompat.getColor(this, R.color.purple)
@@ -31,14 +36,6 @@ class UsfStandard : AppCompatActivity() {
         binding = ActivityUsfStandardBinding.inflate(layoutInflater)
         val view = binding.root
 
-
-        val dbUFRB = Data.servUFRB
-        val dbUSF = Data.servUFRB
-        val dbONGS = Data.servUFRB
-        val dbASSSOCIAL = Data.assSocial
-        val dbLE = LazerEducData.lazerEduca
-        val dbDS = DirSegData.dirSeg
-        val dbSUS = Data.sus
 
         setContentView(view)
 
@@ -52,48 +49,29 @@ class UsfStandard : AppCompatActivity() {
             finish()
         }
 
-        val extraUFRB = intent.getIntExtra("UFRBINDEX", 300)
-        val extraSUS = intent.getIntExtra("SUSINDEX", 400)
-        val extraDS = intent.getIntExtra("DSINDEX", 500)
-        val extraLE = intent.getIntExtra("LEINDEX", 600)
-        val extraAS = intent.getIntExtra("ASINDEX", 700)
-        val extraUSF = intent.getIntExtra("USFINDEX", 800)
-        val extraONGS = intent.getIntExtra("ONGSINDEX", 900)
+
+        setterItem(GlobalData.dataObject,GlobalData.dO_GlobalIndex)
+
+        val listBtns = binding.linearLayout.children.filterIsInstance<TextView>().toList()
+        val newList =  listBtns.filterIndexed { i, _ -> i != 0 }
+
+        readScreen = ReadScreen(this,newList)
 
 
-        if (extraUFRB != 300) {
-            setterItem(dbUFRB, extraUFRB)
-            if(extraUFRB == 1){
-                binding.linearLayout.addView(btnLinks("https://www.ufrb.edu.br/ccs/"))
-            }
-        }
-        if (extraSUS != 400) {
-            setterItem(dbSUS, extraSUS)
-        }
-        if (extraDS != 500) {
-            setterItem(dbDS, extraDS)
-            if (extraDS == 1 || extraDS == 2) {
-                binding.linearLayout.addView(viewSpace())
-                binding.linearLayout.addView(btnComplaint(extraDS))
-            }
-        }
-        if (extraLE != 600) {
-            setterItem(dbLE, extraLE)
-        }
-        if (extraAS != 700) {
-            setterItem(dbASSSOCIAL, extraAS)
-        }
-        if (extraUSF != 800) {
-            setterItem(dbUSF, extraUSF)
-        }
-        if (extraONGS != 900) {
-            setterItem(dbONGS, extraONGS)
-        }
 
+        binding.play.setOnClickListener {
+            readScreen.startReadBtns()
+        }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        readScreen.stopReadBtns()
 
     }
 
-    private fun setterItem(obj: List<UsfConstructor>, i: Int) {
+
+    private fun setterItem(obj: List<InfoDataConstructor>, i: Int) {
         val mutableList = mutableListOf<String>()
         val phoneItem = obj[i].phone
         val lista = listOf(
@@ -113,9 +91,14 @@ class UsfStandard : AppCompatActivity() {
 
         infoBuilder(mutableList, obj, i)
         phoneItemConstructor(100, 1, phoneItem)
+
+
+
+
+
     }
 
-    private fun infoBuilder(mList: MutableList<String>, obj: List<UsfConstructor>, i: Int) {
+    private fun infoBuilder(mList: MutableList<String>, obj: List<InfoDataConstructor>, i: Int) {
         mList.forEachIndexed { index, e ->
             binding.linearLayout.addView(infoItem(e), 4 + index)
         }

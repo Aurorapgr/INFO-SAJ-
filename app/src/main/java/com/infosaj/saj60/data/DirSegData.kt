@@ -3,10 +3,10 @@ package com.infosaj.saj60.data
 import com.infosaj.saj60.R
 
 object DirSegData {
-    val dirSeg : List<UsfConstructor> = listOf(
-        UsfConstructor(
+    val dirSeg : List<InfoDataConstructor> = listOf(
+        InfoDataConstructor(
             img = R.drawable.def_pub,
-            id = R.id.DPT,
+            id = 0,
             usfName = "DEFENSORIA PÚBLICA",
             aten = "Atendimento: 8h às 12 e 13h às 17h",
             addr = "Endereço: Rua Ver. Albertino Lira, n° 01 - bairro Quitandinha, Santo Antônio de Jesus - BA.",
@@ -39,9 +39,9 @@ object DirSegData {
             serv = "",
             team = ""
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = R.drawable.min_pub,
-            id = R.id.MINPUB,
+            id = 0,
             usfName = "MINISTÉRIO PÚBLICO",
             aten = "Atendimento: 8h às 12h e 14h às 18h.",
             addr = "Endereço: Av. Ver. João Silva, 130 - Amparo, Santo Antônio de Jesus - BA, 44572-570",
@@ -73,9 +73,9 @@ object DirSegData {
             serv = "",
             team = ""
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = R.drawable.cdc,
-            id = R.id.CONMUN,
+            id = 0,
             usfName = "Conselho Municipal dos Direitos da Pessoa Idosa",
             aten = "Atendimento: 8h às 14h",
             addr = "Endereço: Av. Ver. João Silva, n° 683 – Amparo, Santo An-tônio de Jesus– BA, 44572-570",
@@ -90,9 +90,9 @@ object DirSegData {
             serv = "",
             team = ""
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = R.drawable.qdp,
-            id = R.id.DELEG,
+            id = 0,
             usfName = "DELEGACIA",
             aten = "Atendimento: 24H",
             addr = "Endereço: Avenida Antônio Carlos Magalhães, Santo Antônio de Jesus - BA, 44441-606. s/ n°",
@@ -115,9 +115,9 @@ object DirSegData {
             serv = "",
             team = ""
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = 0,
-            id = R.id.EMPRECONSIG,
+            id = 0,
             usfName = "Empréstimo Consignado",
             aten = "Informações: Empréstimo consignado é um empréstimo pessoal cujo pagamento é descontado diretamente, em parcelas mensais fixas, da folha de " +
                     "pagamento ou do benefício previdenciário do contratante. A consignação em folha de " +
@@ -160,9 +160,9 @@ object DirSegData {
             serv = "",
             team = ""
         ),
-        UsfConstructor(
+        InfoDataConstructor(
             img = 0,
-            id = R.id.BENF,
+            id = 0,
             usfName = "Benefício de Prestação Continuada – BPC",
             aten = "Informações: " +
                     "Para a pessoa idosa com 65 anos ou mais, que não possuir meios de prover a própria manutenção nem" +
@@ -257,29 +257,3 @@ object DirSegData {
         )
     )
 }
-/*
-val testee =
-    UsfConstructor(
-        img = 0,
-        id = 0,
-        usfName = "",
-        aten = "",
-        addr = "",
-        phone = "",
-        email = "",
-        insta = "",
-        info = "",
-        docm = "",
-        serv = "",
-        team = ""
-    )
-
-val teste2 =CompliantConstructor(
-    title = "",
-    name = "",
-    info0 = "",
-    info1 = "" ,
-    info2 = "",
-    info3 = "",
-    info4 = ""
-)*/
