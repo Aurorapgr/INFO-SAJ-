@@ -32,7 +32,7 @@
         android:text="@string/info1"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:paddingHorizontal="25dp"
         app:layout_constraintBottom_toTopOf="@+id/home"
@@ -50,7 +50,7 @@
         android:text=""
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/home"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +66,7 @@
         android:text="Núcleo de Estudos Avançados em Desenvolvimento Humano e Saúde Mental da Universidade Federal do Recôncavo da Bahia."
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/home"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,14 +81,14 @@
         android:text="Apoio: CNPq"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/home"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/info3"
-        app:layout_constraintVertical_bias="0.79" />
+        app:layout_constraintVertical_bias="0.454" />
 
     <ImageView
         android:id="@+id/home"
@@ -112,7 +112,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_logout_24" />
+        app:srcCompat="@drawable/bx_arrow_back" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="102dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toTopOf="@+id/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info4"
+        app:layout_constraintVertical_bias="0.26999998"
+        app:srcCompat="@drawable/cnpq" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

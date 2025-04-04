@@ -61,9 +61,14 @@ class Emergen : AppCompatActivity() {
 
 
 
-        readScreen = ReadScreen(this,armengue1)
+        readScreen = ReadScreen(this,armengue1,binding.play)
+
         binding.play.setOnClickListener {
-            readScreen.startReadBtns()
+            if (!readScreen.isReading) {
+                readScreen.startReadBtns()
+            } else {
+                readScreen.stopReadBtns()
+            }
         }
 
 

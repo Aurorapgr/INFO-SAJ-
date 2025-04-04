@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             binding.emerg
         )
 
-        readScreen = ReadScreen(this,listBtns)
+        readScreen = ReadScreen(this,listBtns,binding.play)
 
 
         binding.toSaude.setOnClickListener {
@@ -60,7 +60,11 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.play.setOnClickListener {
-            readScreen.startReadBtns()
+            if (!readScreen.isReading) {
+                readScreen.startReadBtns()
+            } else {
+                readScreen.stopReadBtns()
+            }
         }
 
 

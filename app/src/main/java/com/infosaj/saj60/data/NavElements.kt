@@ -9,7 +9,7 @@ object NavElements {
         Tela(
             title = "Saúde",
             btns = listOf(
-                Btn("Sistema Único de Saúde - SUS",1,null, null, null),
+                Btn("Sistema Único de Saúde",1,null, null, null),
                 Btn("Instituições Filantrópicas e ONGS",2,null, null, null),
                 Btn("Serviços da UFRB",3,null, null, null),
                 Btn("Defensoria Pública",null,UsfStandard::class.java, DirSegData.dirSeg, 0)
@@ -18,9 +18,9 @@ object NavElements {
         Tela(
             title = "SUS",
             btns = listOf(
-                Btn("USF’S - Unidades de Saúde da Família ",4,null, null, null),
+                Btn("Unidades de Saúde da Família ",4,null, null, null),
                 Btn("Policlínica Regional de Santo Antônio de Jesus",null,UsfStandard::class.java, Data.sus, 0),
-                Btn("HRSAJ - Hospital Regional de Santo Antônio de Jesus ",null,UsfStandard::class.java, Data.sus, 1),
+                Btn("Hospital Regional de Santo Antônio de Jesus ",null,UsfStandard::class.java, Data.sus, 1),
                 Btn("Policlínica Municipal",null,UsfStandard::class.java, Data.sus, 2),
                 Btn("UNACON",null, UsfStandard::class.java, Data.sus, 3)
             )
@@ -28,20 +28,20 @@ object NavElements {
         Tela(
             title = "INSTITUIÇÕES FILANTRÓPICAS E ONGS",
             btns = listOf(
-                Btn("IDSAJ - Instituto dos diabéticos de SAJ", refpt = null,UsfStandard::class.java, Data.instOngs, 0),
+                Btn("Instituto dos diabéticos de SAJ", refpt = null,UsfStandard::class.java, Data.instOngs, 0),
                 Btn("ASDEV", refpt = null,UsfStandard::class.java, Data.instOngs, 1),
                 Btn("Lar dos Idosos", refpt = null,UsfStandard::class.java, Data.instOngs, 2)
             )
         ),
         Tela(
-            title = "UFRB - Serviços da Universidade Federal do Recôncavo da Bahia",
+            title = "Serviços da Universidade Federal do Recôncavo da Bahia",
             btns = listOf(
                 Btn("LABCOV - Laboratório de Vigilância e Diagnóstico Avançado", refpt = null,UsfStandard::class.java, Data.servUFRB, 0),
                 Btn("Serviço de Psicologia", refpt = null,UsfStandard::class.java, Data.servUFRB, 1)
             )
         ),
         Tela(
-            title = "USF’S - Unidades de Saúde da Família ",
+            title = "Unidades de Saúde da Família ",
             btns =listOf(
                 Btn("USF Alto do Morro", null, UsfStandard::class.java, Data.usfs, 0),
                 Btn("USF Alto Santo Antônio", null, UsfStandard::class.java, Data.usfs, 1),
@@ -78,8 +78,8 @@ object NavElements {
         Tela(
             title = "Lazer e Educação",
             btns = listOf(
-                Btn("UATI - Universidade Aberta à Terceira Idade (UNEB)",null,UsfStandard::class.java,LazerEducData.lazerEduca,0),
-                Btn("VOSA - Voluntários Solidários em Ação",null,UsfStandard::class.java,LazerEducData.lazerEduca,1),
+                Btn("Universidade Aberta à Terceira Idade (UNEB)",null,UsfStandard::class.java,LazerEducData.lazerEduca,0),
+                Btn("Voluntários Solidários em Ação",null,UsfStandard::class.java,LazerEducData.lazerEduca,1),
                 Btn("Secretaria de Educação",null,UsfStandard::class.java,LazerEducData.lazerEduca,2)
             )
         ),

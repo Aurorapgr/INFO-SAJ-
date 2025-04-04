@@ -7,7 +7,7 @@ object LazerEducData {
         InfoDataConstructor(
             img = R.drawable.uneb,
             id = 0,
-            usfName = "UATI",
+            usfName = "Universidade Aberta à Terceira Idade",
             aten = "",
             addr = "Endereço: Rua Tenente-Cel. Bandeira de Melo - São Benedito, Santo Antônio de Jesus - BA, 44571-003, as atividades ocorrem no auditório da UNEB.",
             phone = "Telefone: (75) 98868-4504",
@@ -25,7 +25,7 @@ object LazerEducData {
         ), InfoDataConstructor(
             img = R.drawable.vosa,
             id = 0,
-            usfName = "VOSA",
+            usfName = "Voluntários Solidários em Ação",
             aten = "Atendimento: De segunda à sexta, de 8h às 12h e das 14h às 17h, aos sábados funciona de 8h às 12h.",
             addr = "Endereço: Praça são José, Andaiá, procurar por secretaria paroquial, em frente ao supermercado sacolão do povo.",
             phone = "Telefone: (75) 99853-3381",
