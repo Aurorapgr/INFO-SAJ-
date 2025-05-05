@@ -1,3 +1,0 @@
-SHA512 hash de C:\Users\Rora\AndroidStudioProjects\SAJ602\app\release\app-release.apk:
-6f81f78632fa21301e5784e47ce3026c0afd2f4399d51a697002c276cf742350259da82caa9121a536ba6e121fc962cb72d6c29ab232d47cc7f7b8a144f5d02a
-CertUtil: -hashfile : comando concluído com êxito.
