@@ -5,16 +5,19 @@ import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.LayerDrawable
+import android.media.Image
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import java.util.Locale
 
-class ReadScreen(context: Context, private val btns : List<TextView>): TextToSpeech.OnInitListener  {
+class ReadScreen(context: Context, private val btns : List<TextView>, private val player : ImageView): TextToSpeech.OnInitListener  {
     private var tts: TextToSpeech = TextToSpeech(context,this)
     private var cIdx = 0
+    var isReading = false
 
     //Detalhe interessante pra fixar na mente: Isso aqui é uma interface, não uma herança
     //Interface é como se você estivesse "herdando" um comportamento ou função para um novo objeto
@@ -23,21 +26,20 @@ class ReadScreen(context: Context, private val btns : List<TextView>): TextToSpe
     init {
         tts.setOnUtteranceProgressListener(object  : android.speech.tts.UtteranceProgressListener(){
             override fun onStart(utteranceId : String?){
-                //post serve pra executar após a formação completa da UI
+
                 btns[cIdx].post{
-                    setStrokeBtns(btns[cIdx],true)
+                    setStrokeBtns(btns[cIdx])
                 }
             }
 
             override fun onDone(utteranceId: String?) {
                 //Leitura terminou, já chama a próxima
-                clearStroke(btns[cIdx])
+                if (cIdx in btns.indices) {
+                    clearStroke(btns[cIdx])
+                }
                 cIdx++
                 if (cIdx < btns.size){
                     readBtns(cIdx)
-
-
-
                 }
             }
 
@@ -45,7 +47,10 @@ class ReadScreen(context: Context, private val btns : List<TextView>): TextToSpe
             }
 
             override fun onStop(utteranceId: String?, interrupted: Boolean) {
-                clearStroke(btns[cIdx])
+                isReading = false
+                if (cIdx in btns.indices) {
+                    clearStroke(btns[cIdx])
+                }
             }
         })
 
@@ -57,6 +62,8 @@ class ReadScreen(context: Context, private val btns : List<TextView>): TextToSpe
     }
 
     fun startReadBtns(){
+        isReading = true
+        player.setImageResource(R.drawable.bx_pause_circle)
         if (btns.isNotEmpty()){
             cIdx = 0
             readBtns(cIdx)
@@ -64,8 +71,26 @@ class ReadScreen(context: Context, private val btns : List<TextView>): TextToSpe
     }
 
     fun stopReadBtns(){
+        isReading = false
+        player.setImageResource(R.drawable.megaphone)
         tts.stop()
+        if (cIdx in btns.indices) {
+            clearStroke(btns[cIdx])
+        }
     }
+    fun highlightButton(view: View) {
+       if (view is ImageView){
+           view.setImageResource(R.drawable.bx_pause_circle)
+
+       }
+    }
+
+    fun clearHighlightButton(view: View) {
+        if (view is ImageView){
+            view.setImageResource(R.drawable.megaphone)
+        }
+    }
+
 
 
     private fun readBtns(idx: Int) {
@@ -82,7 +107,7 @@ class ReadScreen(context: Context, private val btns : List<TextView>): TextToSpe
 
     }
 
-    private fun setStrokeBtns(view: View, act: Boolean){
+    private fun setStrokeBtns(view: View){
 
         val defaultBG : Drawable? = view.background
 

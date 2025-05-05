@@ -55,12 +55,16 @@ class UsfStandard : AppCompatActivity() {
         val listBtns = binding.linearLayout.children.filterIsInstance<TextView>().toList()
         val newList =  listBtns.filterIndexed { i, _ -> i != 0 }
 
-        readScreen = ReadScreen(this,newList)
+        readScreen = ReadScreen(this,newList,binding.play)
 
 
 
         binding.play.setOnClickListener {
-            readScreen.startReadBtns()
+            if (!readScreen.isReading) {
+                readScreen.startReadBtns()
+            } else {
+                readScreen.stopReadBtns()
+            }
         }
     }
 

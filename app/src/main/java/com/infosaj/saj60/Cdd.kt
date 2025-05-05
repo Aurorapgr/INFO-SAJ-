@@ -17,6 +17,7 @@ import com.infosaj.saj60.databinding.ActivityCddBinding
 
 class Cdd : AppCompatActivity() {
     private lateinit var readScreen: ReadScreen
+
     private lateinit var binding: ActivityCddBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,11 +31,25 @@ class Cdd : AppCompatActivity() {
             toComplaint(1)
         }
 
+        binding.home.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
+            finish()
+        }
+        binding.back.setOnClickListener{
+            finish()
+        }
 
         val listBtns = binding.linearLayout.children.filterIsInstance<TextView>().toList()
-        readScreen = ReadScreen(this,listBtns)
+        val armengue1 =  listBtns.filterIndexed {  i, _ -> i != 0 }
+        readScreen = ReadScreen(this,armengue1,binding.play)
+
+
         binding.play.setOnClickListener {
-            readScreen.startReadBtns()
+            if (!readScreen.isReading) {
+                readScreen.startReadBtns()
+            } else {
+                readScreen.stopReadBtns()
+            }
         }
 
     }

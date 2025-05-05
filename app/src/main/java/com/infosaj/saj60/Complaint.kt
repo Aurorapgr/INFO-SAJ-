@@ -52,9 +52,14 @@ class Complaint : AppCompatActivity() {
         }
 
         val listBtns = binding.linearLayout.children.filterIsInstance<TextView>().toList()
-        readScreen = ReadScreen(this,listBtns)
+        readScreen = ReadScreen(this,listBtns,binding.play)
+
         binding.play.setOnClickListener {
-            readScreen.startReadBtns()
+            if (!readScreen.isReading) {
+                readScreen.startReadBtns()
+            } else {
+                readScreen.stopReadBtns()
+            }
         }
 
 
