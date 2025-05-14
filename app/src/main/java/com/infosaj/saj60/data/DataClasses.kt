@@ -35,11 +35,7 @@ data class InfoDataConstructor(
     val docm : String,
     val serv: String,
     val team : String)
-data class NavInfo(
-    val id: String,
-    val title: String,
-    val tabInfo : List<String>
-)
+
 data class Tela(
     val title: String,
     val btns: List<Btn>

@@ -88,8 +88,8 @@ class Emergen : AppCompatActivity() {
         binding.linearLayout.addView(genericTitle(this,"SAÚDE"))
         binding.linearLayout.addView(genericView(this))
 
-        epData.forEachIndexed{i,e ->
-            setterItemH(e,i)
+        epData.forEachIndexed{_,e ->
+            setterItemH(e)
         }
 
     }
@@ -99,12 +99,12 @@ class Emergen : AppCompatActivity() {
         binding.linearLayout.addView(genericTitle(this,"SEGURANÇA"))
         binding.linearLayout.addView(genericView(this))
 
-        epsData.forEachIndexed{i,e ->
-            setterItemS(e,i)
+        epsData.forEachIndexed{_,e ->
+            setterItemS(e)
         }
 
     }
-    private fun setterItemS(obj: EPC, i:Int){
+    private fun setterItemS(obj: EPC){
 
         var title = obj.title
         var btn1 = btnEmerg("",obj.phone1)
@@ -118,7 +118,7 @@ class Emergen : AppCompatActivity() {
     }
 
 
-    private fun setterItemH(obj: EPC, i:Int){
+    private fun setterItemH(obj: EPC){
         var btn = btnEmerg(obj.title,obj.phone1)
         binding.linearLayout.addView(btn)
         binding.linearLayout.addView(genericView(this))

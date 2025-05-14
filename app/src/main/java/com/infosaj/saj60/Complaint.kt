@@ -79,7 +79,7 @@ class Complaint : AppCompatActivity() {
             obj[index].info2
         )
 
-        lista.forEachIndexed { i, e ->
+        lista.forEachIndexed { _, e ->
             if (e.isNotEmpty()) {
                 mutableList.add(e)
             }
@@ -97,7 +97,7 @@ class Complaint : AppCompatActivity() {
     }
 
     private fun infoBuilder(mList: MutableList<String>, obj: List<CompliantConstructor>, i: Int) {
-        mList.forEachIndexed { i, e ->
+        mList.forEachIndexed { _, e ->
             binding.linearLayout.addView(infoItem(i, e))
         }
         val firstChild = binding.linearLayout.getChildAt(3)

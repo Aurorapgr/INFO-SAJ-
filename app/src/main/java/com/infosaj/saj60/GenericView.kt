@@ -9,7 +9,6 @@ import androidx.core.view.children
 import androidx.lifecycle.ViewModelProvider
 import com.infosaj.saj60.data.GlobalData
 import com.infosaj.saj60.data.NavElements
-import com.infosaj.saj60.data.NavInfo
 import com.infosaj.saj60.data.Tela
 import com.infosaj.saj60.databinding.ActivityGenericViewBinding
 

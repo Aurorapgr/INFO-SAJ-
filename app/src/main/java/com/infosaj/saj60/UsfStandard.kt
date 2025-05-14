@@ -86,7 +86,7 @@ class UsfStandard : AppCompatActivity() {
             obj[i].team,
             obj[i].serv
         )
-        lista.forEachIndexed { i, e ->
+        lista.forEachIndexed { _, e ->
             if (e.isNotEmpty()) {
                 mutableList.add(e)
             }
@@ -94,7 +94,7 @@ class UsfStandard : AppCompatActivity() {
 
 
         infoBuilder(mutableList, obj, i)
-        phoneItemConstructor(100, 1, phoneItem)
+        phoneItemConstructor( phoneItem)
 
 
 
@@ -120,7 +120,7 @@ class UsfStandard : AppCompatActivity() {
         }
     }
 
-    private fun phoneItemConstructor(Id: Int, i: Int, e: String) {
+    private fun phoneItemConstructor(e: String) {
         val btnLL = CallPhoneBinding.inflate(layoutInflater)
         val btn = btnLL.root
 
