@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.infosaj.saj60.data.InfoTab
 import com.infosaj.saj60.databinding.ActivityInfoWindownsBinding
 
-class InfoWindowns : AppCompatActivity() {
+class InfoWindows : AppCompatActivity() {
     private lateinit var binding: ActivityInfoWindownsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

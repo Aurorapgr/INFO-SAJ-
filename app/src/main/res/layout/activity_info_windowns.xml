@@ -11,7 +11,7 @@
     android:orientation="vertical"
     android:paddingTop="10dp"
     android:paddingBottom="20dp"
-    tools:context=".InfoWindowns">
+    tools:context=".InfoWindows">
 
     <ImageView
         android:id="@+id/tv_1_main"

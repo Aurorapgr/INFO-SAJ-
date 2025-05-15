@@ -3,7 +3,6 @@ package com.infosaj.saj60
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import android.speech.tts.TextToSpeech
 import com.infosaj.saj60.data.GlobalData
 import com.infosaj.saj60.databinding.ActivityMainBinding
 
@@ -51,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Emergen::class.java))
         }
         binding.infotab.setOnClickListener {
-            startActivity(Intent(this, InfoWindowns::class.java))
+            startActivity(Intent(this, InfoWindows::class.java))
         }
 
         setContentView(view)

@@ -34,7 +34,7 @@
             android:name=".Cdd"
             android:exported="false" />
         <activity
-            android:name=".InfoWindowns"
+            android:name=".InfoWindows"
             android:exported="false" />
         <activity
             android:name=".Emergen"
