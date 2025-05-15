@@ -22,6 +22,12 @@ class InfoWindowns : AppCompatActivity() {
         binding.PDP.setOnClickListener {
             startActivity(intentURL)
         }
+        binding.back.setOnClickListener {
+            finish()
+        }
+        binding.home.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
 
 
 
