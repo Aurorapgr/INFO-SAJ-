@@ -12,8 +12,8 @@ android {
     applicationId = "com.infosaj.saj60"
     minSdk = 21
     targetSdk = 34
-    versionCode = 2
-    versionName = "1.2"
+    versionCode = 5
+    versionName = "1.5 T.F. correções de política e exoneração"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
