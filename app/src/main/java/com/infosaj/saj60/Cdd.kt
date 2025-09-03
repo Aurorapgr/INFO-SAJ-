@@ -24,6 +24,10 @@ class Cdd : AppCompatActivity() {
         binding = ActivityCddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
+
+
         binding.VMP.setOnClickListener {
             toComplaint(0)
         }

@@ -6,14 +6,14 @@ plugins {
 
 android {
   namespace = "com.infosaj.saj60"
-  compileSdk = 34
+  compileSdk = 35
 
   defaultConfig {
     applicationId = "com.infosaj.saj60"
     minSdk = 21
-    targetSdk = 34
-    versionCode = 5
-    versionName = "1.5 T.F. correções de política e exoneração"
+    targetSdk = 35
+    versionCode = 6
+    versionName = "1.6 Atualização para API 35"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
