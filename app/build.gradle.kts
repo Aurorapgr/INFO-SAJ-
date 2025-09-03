@@ -12,8 +12,8 @@ android {
     applicationId = "com.infosaj.saj60"
     minSdk = 21
     targetSdk = 35
-    versionCode = 6
-    versionName = "1.6 Atualização para API 35"
+    versionCode = 7
+    versionName = "2 Produção"
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
